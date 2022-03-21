@@ -29,22 +29,22 @@ int main()
 				window.close();
 			
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && keyDelay % 10 == 0) {
 			a++;
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && keyDelay % 10 == 0) {
 			a--;
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && keyDelay % 10 == 0) {
 			k--;
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && keyDelay % 10 == 0) {
 			k++;
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && keyDelay % 10 == 0) {
 			angle += 3.14159265358979323 / 100;
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && keyDelay % 10 == 0) {
 			angle -= 3.14159265358979323 / 100;
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
